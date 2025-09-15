@@ -23,8 +23,14 @@ public class Product {
 	@DecimalMin(value = "0.0", message = "price cannot be less than zero")
 	private double price;
 
+	
 	public Product() {
-
+		
+	}
+	public Product(long id, String name, double price) {
+   this.id = id;
+   this.name = name;
+   this.price = price;
 	}
 
 	public Long getId() {
